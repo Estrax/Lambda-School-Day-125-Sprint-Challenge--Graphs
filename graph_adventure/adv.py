@@ -22,7 +22,7 @@ player = Player("Name", world.startingRoom)
 # FILL THIS IN
 traversalPath = []
 
-traversalPath = solve(world.startingRoom, roomGraph)
+traversalPath = solve(world.startingRoom, roomGraph, 980)
 print(f'Traversal length: {len(traversalPath)}')
 print(f'Path:\n{traversalPath}')
 

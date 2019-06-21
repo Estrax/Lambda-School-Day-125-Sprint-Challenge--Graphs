@@ -1,8 +1,7 @@
 from room import Room
 from player import Player
 from world import World
-
-import random
+from solution import solve
 
 # Load world
 world = World()
@@ -21,7 +20,10 @@ player = Player("Name", world.startingRoom)
 
 
 # FILL THIS IN
-traversalPath = ['n', 's']
+traversalPath = []
+
+traversalPath = solve(world.startingRoom, roomGraph)
+print(f'Traversal length: {len(traversalPath)}')
 
 
 # TRAVERSAL TEST

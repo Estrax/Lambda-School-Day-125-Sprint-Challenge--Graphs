@@ -1,7 +1,7 @@
 from room import Room
 from player import Player
 from world import World
-from solution2 import solve
+from solution import solve
 
 # Load world
 world = World()
